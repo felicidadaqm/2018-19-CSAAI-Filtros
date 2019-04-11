@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Filtro 5</title>
+    <link rel="stylesheet" href="filtro5.css">
+    <script src="filtro1.js"></script>
+  </head>
+  <body onload="main();">
+    <canvas id="display"></canvas>
+    <img src="black-hole.jpg" id="imagesrc">
+    <br>
+    <b>Escala de grises</b>
+    <input type="checkbox" name="gray"><br>
+    <p>Establece el umbral de rojo:</p>
+    <input type="range" id="deslizador" min="0" max="255" value="255"/>
+    <p id="range_value">00</p>
+    <p>Establece el umbral de verde:</p>
+    <input type="range" id="verde" min="0" max="255" value="255"/>
+    <p id="range_value1">00</p>
+    <p>Establece el umbral de azul:</p>
+    <input type="range" id="azul" min="0" max="255" value="255"/>
+    <p id="range_value2">00</p>
+  </body>
+</html>
