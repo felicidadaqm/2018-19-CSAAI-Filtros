@@ -3,26 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Filtro 5</title>
-    <link rel="stylesheet" href="filtro5.css">
+    <link rel="stylesheet" href="filtro1.css">
     <script src="filtro1.js"></script>
   </head>
+
   <body onload="main();">
-    <canvas id="display"></canvas>
-    <img src="black-hole.jpg" id="imagesrc">
-    <br>
-    <b>Escala de grises</b>
-    <input type="checkbox" name="gray"><br>
+    <div id="Pagina">
+      <div id="left">
+        <div id="easer">
+          <img src="black-hole.jpg" id="imagesrc">
+        </div>
+      </div>
 
-    <p>Establece el umbral de rojo:</p>
-    <input type="range" id="red" min="0" max="255" value="255"/>
-    <p id="range_valuer">--</p>
+      <div id="right">
+        <div id="easer1">
+          <canvas id="display"></canvas>
+        </div>
+      </div>
+      <br>
+      <button type="button" id="gray">Escala de grises</button><br><br>
 
-    <p>Establece el umbral de verde:</p>
-    <input type="range" id="green" min="0" max="255" value="255"/>
-    <p id="range_valueg">--</p>
+      <span class="note">
+      <p class="explanation">Establece el umbral de rojo:</p>
+      <input type="range" class="slider" id="red" min="0" max="255" value="255"/>
+        <p class="value" id="range_valuer">--</p>
+      </span>
 
-    <p>Establece el umbral de azul:</p>
-    <input type="range" id="blue" min="0" max="255" value="255"/>
-    <p id="range_valueb">--</p>
+      <span class="note">
+      <p class="explanation">Establece el umbral de verde:</p>
+      <input type="range" class="slider" id="green" min="0" max="255" value="255"/>
+        <p class="value" id="range_valueg">--</p>
+      </span>
+      <span class="note">
+      <p class="explanation">Establece el umbral de azul:</p>
+      <input type="range" class="slider" id="blue" min="0" max="255" value="255"/>
+        <p class="value" id="range_valueb">--</p>
+      </span>
+    </div>
   </body>
 </html>

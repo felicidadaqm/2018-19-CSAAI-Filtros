@@ -1,3 +1,119 @@
 body {
   background-color: grey;
 }
+
+#página{
+  column-count: 2;
+  column-gap: 150px;
+  text-align: left;
+  width: 1300px;
+  margin: auto;}
+
+#left{
+  width: 500px;  /*Ancho cholumna*/
+  background-color: grey;
+  float:left;
+}
+
+#right{
+  margin-left: 650px; /*Margen*/
+  background-color: grey;
+}
+
+#imagesrc {
+  border-bottom: 35px solid black;
+  border-top: 15px solid black;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-image: url('woodh.jpg') 25% repeat;
+}
+
+#easer:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #bdbdbd;
+  position: absolute;
+  left: 23%;
+  margin: auto;
+  transform: perspective(100px) translateX(-50%) rotateX(30deg) skewX(10deg);
+  background-image: url('woodv.jpg') 25% repeat;
+}
+
+#display {
+  border-bottom: 35px solid black;
+  border-top: 15px solid black;
+  margin-top: 50px;
+  border-image: url('woodh.jpg') 25% repeat;
+}
+
+#easer1:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #bdbdbd;
+  position: absolute;
+  right: 30%;
+  margin: auto;
+  transform: perspective(100px) translateX(-50%) rotateX(30deg) skewX(10deg);
+  background-image: url('woodv.jpg') 25% repeat;
+}
+
+.note {
+  display: inline-block;
+  margin: auto;
+  margin-left: 140px;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  background: #ffc;
+  height: 100px;;
+  width: 230px;
+  padding: 1em;
+  -webkit-box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 11px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.explanation {
+  font-family: georgia, arial;
+  text-decoration: underline;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #FF96AB;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #B36978;
+  cursor: pointer;
+}
+
+#gray {
+  margin:auto;
+  margin-left: 550px;
+  height: 25px;
+  width: 260px;
+  background-color: #eeddd2;
+  font-weight: bold;
+  border-radius: 15px;
+  font-family: georgia, arial;
+  font-size: 15px;
+}
+
+#gray:hover {
+  background-color: #dbbba6;
+}
